@@ -1,0 +1,12 @@
+name: GitHub Actions
+on:
+  pull_request:
+    types: [opened]
+    branches:
+      - $default-branch
+  push:
+jobs:
+  I-Can-Change-This-To-Anything-I-Want:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🍏 This job's status is ${{ job.status }}."
