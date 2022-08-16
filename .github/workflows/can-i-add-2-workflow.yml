@@ -1,11 +1,12 @@
 name: GitHub Actions
 on:
-  push:
+  pull_request:
+    types: [opened]
     branches:
       - $default-branch
   push:
 jobs:
-  I-Change-This-To-Anything-I-Want:
+  I-Can-Change-This-To-Anything-I-Want:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🍏 This job's status is ${{ job.status }}."
