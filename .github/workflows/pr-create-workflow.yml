@@ -4,6 +4,9 @@ on:
     types: [opened]
     branches:
       - master
+  push:
+    branches:
+      - master
 jobs:
   I-Can-Change-This-To-Anything-I-Want:
     runs-on: ubuntu-latest
