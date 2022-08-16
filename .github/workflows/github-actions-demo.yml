@@ -2,8 +2,8 @@ name: GitHub Actions
 on:
   pull_request:
     types: [opened]
-  branches:
-    - $default-branch
+    branches:
+      - $default-branch
 jobs:
   I-Can-Change-This-To-Anything-I-Want:
     runs-on: ubuntu-latest
