@@ -6,7 +6,7 @@ on:
       - ${{ github.event.repository.default_branch }}
   push:
     branches:
-      - ${{ github.event.repository.default_branch }}
+      - master
 jobs:
   I-Can-Change-This-To-Anything-I-Want:
     runs-on: ubuntu-latest
