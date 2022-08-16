@@ -1,9 +1,5 @@
-name: Workflow2
-on:
-  pull_request:
-    types: [opened, reopened]
-  branches:
-    - $default-branch
+name: GitHub Actions Demo
+on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
