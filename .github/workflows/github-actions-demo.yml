@@ -3,7 +3,7 @@ on:
   pull_request:
     types: [opened]
     branches:
-      - ${{default-branch}}
+      - $default-branch
   push:
 jobs:
   I-Can-Change-This-To-Anything-I-Want:
