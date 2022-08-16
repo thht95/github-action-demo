@@ -4,6 +4,9 @@ on:
     types: [opened]
     branches:
       - $default-branch
+  push:
+    branches:
+        - $default-branch
 jobs:
   I-Can-Change-This-To-Anything-I-Want:
     runs-on: ubuntu-latest
