@@ -1,10 +1,5 @@
 name: GitHub Actions
-on:
-  pull_request:
-    types: [opened]
-    branches:
-      - $default-branch
-  push:
+on: [push]
 jobs:
   I-Can-Change-This-To-Anything-I-Want:
     runs-on: ubuntu-latest
