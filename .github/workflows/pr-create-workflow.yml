@@ -35,7 +35,6 @@ jobs:
         uses: 'google-github-actions/auth@v0'
         with:
           credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
-      - run: echo "This job's status is ${{ job.status }}."
       - name: Deploy to Cloud Run
         id: deploy
         uses: google-github-actions/deploy-cloudrun@v0
@@ -46,8 +45,9 @@ jobs:
           source: ./
 
         # If required, use the Cloud Run url output in later steps
-        - name: Show Output
-          run: echo ${{ steps.deploy.outputs.url }}
+      - name: Show Output
+        run: echo ${{ steps.deploy.outputs.url }}
+      - run: echo "This job's status is ${{ job.status }}."
 env:
   PROJECT_ID: test-971a2
   SERVICE: helloworld
