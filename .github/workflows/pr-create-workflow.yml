@@ -8,7 +8,7 @@ on:
     branches:
       - master
 jobs:
-  I-Can-Change-This-To-Anything-I-Want:
+  frontend-cicd:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
@@ -20,4 +20,9 @@ jobs:
           args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+      - run: echo "🍏 This job's status is ${{ job.status }}."
+  backend-cicd:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🍏 This job's status is ${{ job.status }}."
