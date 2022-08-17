@@ -52,3 +52,4 @@ env:
   PROJECT_ID: test-971a2
   SERVICE: helloworld
   REGION: asia-southeast1
+  GOOGLE_ENTRYPOINT: ruby app.rb
