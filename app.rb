@@ -1,7 +1,7 @@
 require "sinatra"
 
 set :bind, "0.0.0.0"
-port = ENV["PORT"] || "8080"
+port = ENV["PORT"] || "8585"
 set :port, port
 
 get "/" do
