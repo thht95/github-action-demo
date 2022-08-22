@@ -1,0 +1,11 @@
+version: "3"
+services:
+  bookstore:
+    build: .
+    image: gcr.io/test-971a2/bookstore
+    ports:
+      - 3000:3000
+    environment:
+      DATABASE_HOST: bookstore-db
+      DATABASE_USERNAME: bookstore
+      DATABASE_PASSWORD: bookstore
