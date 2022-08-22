@@ -40,5 +40,5 @@ jobs:
         with:
           args: deploy --only hosting
         env:
-          GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GCP_CREDENTIALS }}
+          FIREBASE_TOKEN : ${{ secrets.FIREBASE_TOKEN }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
